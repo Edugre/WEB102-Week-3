@@ -1,0 +1,165 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-image: url('./assets/Earth.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.body_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  min-height: 100vh;
+  min-width: 540px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.description {
+  display: flex;
+  text-align: center;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.card {
+  position: relative;
+  margin: 4em auto 0em auto;
+  height: 300px;
+  min-width: 400px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 4.3px 8.6px 8.6px hsl(0deg 0% 0% / 0.37);
+  cursor: pointer;
+  transition: .15s;
+  transform: perspective(1000px) rotateX(var(--rotate-X, 0));
+  transform-style: preserve-3d;
+  border-radius: 1em;
+}
+.card.easy {
+  background-color: #A0C878;
+}
+.card.medium {
+  background-color: #FCEF91; 
+}
+.card.hard {
+  background-color: #FF3F33;
+}
+.card.flipped {
+  transform: perspective(1000px) rotateX(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  color: #1a1a1a;
+}
+.back {
+  transform: rotateX(180deg);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.buttons {
+  display: flex;
+  margin: 2em auto;
+  gap: 25px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+}
+
+.flag {
+  margin: 0em auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.flag img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.numberOfCards {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
