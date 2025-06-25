@@ -13,52 +13,62 @@ const countries = [
     {
         name: 'USA 🇺🇸',
         flag: usa,
-        difficulty: 'easy'
+        difficulty: 'easy',
+        answers: ['united states', 'america', 'usa', 'us']
     },
     {
         name: 'Canada 🇨🇦',
         flag: canada,
-        difficulty: 'easy'
+        difficulty: 'easy',
+        answers: ['canada', 'ca']
     },
     {
         name: 'France 🇫🇷',
         flag: france,
-        difficulty: 'easy'
+        difficulty: 'easy',
+        answers: ['france', 'fr']
     },
     {
         name: 'Mexico 🇲🇽',
         flag: mexico,
-        difficulty: 'easy'
+        difficulty: 'easy',
+        answers: ['mexico', 'mx']
     },
     {
         name: 'Brazil 🇧🇷',
         flag: brazil,
-        difficulty: 'medium'
+        difficulty: 'medium',
+        answers: ['brazil', 'br']
     },
     {
         name: 'Japan 🇯🇵',
         flag: japan,
-        difficulty: 'medium'
+        difficulty: 'medium',
+        answers: ['japan', 'jp']
     },
     {
         name: 'Germany 🇩🇪',
         flag: germany,
-        difficulty: 'medium'
+        difficulty: 'medium',
+        answers: ['germany', 'de']
     },
     {
         name: 'India 🇮🇳',
         flag: india,
-        difficulty: 'hard'
+        difficulty: 'hard',
+        answers: ['india', 'in']
     },
     {
         name: 'Australia 🇦🇺',
         flag: australia,
-        difficulty: 'hard'
+        difficulty: 'hard',
+        answers: ['australia', 'au']
     },
     {
         name: 'South Africa 🇿🇦',
         flag: south_africa,
-        difficulty: 'hard'
+        difficulty: 'hard',
+        answers: ['south africa', 'za', 'southafrica']
     }
 ]
 

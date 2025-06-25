@@ -121,6 +121,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button.disabled:hover {
+  border-color: transparent;
+}
 
 .buttons {
   display: flex;
@@ -149,6 +156,54 @@ button:focus-visible {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+.answer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 2em auto;
+  gap: 25px;
+}
+
+input {
+  transition: 0.5s;
+}
+input.correct {
+  background-color: #A0C878;
+}
+input.incorrect {
+  background-color: #FF3F33;
+}
+
+.streak {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.streakBox {
+  background-color: #1a1a1a;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.congratulations_container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.message button {
+  margin: 1em auto;
+  width: 200px;
 }
 
 @media (prefers-color-scheme: light) {
